@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NotiAlDia</title>
+    
+</head>
+<body>
+
+    
+
+    <style>
+        /* Estilos CSS para la página */ 
+        
+        * {
+
+			margin:0px;
+			padding:0px;
+		}
+			
+		#header {
+			margin:auto;
+			width:500px;
+			font-family:Georgia, sans-serif;
+		}
+
+
+        ul, ol {
+			list-style:none;
+		}
+			
+		.nav > li {
+			float:left;
+		}
+			
+		.nav li a {
+			background-color: #333;
+			color:#fff;
+			text-decoration:none;
+			padding:10px 12px;
+			display:block;
+		}
+			
+		.nav li a:hover {
+			background-color:#434343;
+		}
+			
+		.nav li ul {
+			display:none;
+			position:absolute;
+			min-width:140px;
+		}
+			
+		.nav li:hover > ul {
+			display:block;
+		}
+			
+		.nav li ul li {
+			position:relative;
+		}
+			
+		.nav li ul li ul {
+			right:-140px;
+			top:0px;
+		}        
+
+
+        body {
+          background-color: #f2f2f2;
+          font-family: Georgia, serif;
+          margin: -5;
+          padding: 0;
+        }
+        header {
+          background-color: #333;
+          color: #fff;
+          padding: 5px;
+          text-align: center;
+        }
+        
+        .contenedor
+        
+        {
+
+			background-color: #333;
+			color:#fff;
+            height: 10vh;
+            margin: 5%;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+
+        }
+        .contenedor2
+        
+        {
+
+			background-color: none;
+			color:#333;
+            height: 10vh;
+            margin: 10%;
+            flex-direction: column;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+
+        }
+
+        p
+        {
+
+            width: 50%;
+        }
+
+        .contenedor3
+        
+        {
+
+			background-color: none;
+			color:#333;
+            height: 0.5vh;
+            margin: 4%;
+            font-size: 4px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+
+        }
+
+
+
+
+        .contenedorP
+        
+        {
+
+			background-color: none;
+			color:#333;
+            height: 0.5vh;
+            margin: 4%;
+            font-size: 30px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+
+        }   
+        
+        
+        .contenedorVideo
+        
+        {
+
+			background-color: none;
+			color:#333;
+            height: 0.5vh;
+            margin: 4%;
+            font-size: 30px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+
+        }
+
+        
+        .contenedorVideo2
+        
+        {
+
+			background-color: none;
+			color:#333;
+            height: 0.5vh;
+            margin: 4%;
+            font-size: 30px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+
+        }
+
+
+
+        
+      </style>
+    </head>
+  
+  
+
+
+
+    
+      <header>    
+        <h1>NOTICIERO AL AMANECER</h1>
+      </header>
+ 
+	    <div id="header">
+
+			<ul class="nav">
+				<li><a href="../index.html">Inicio</a></li>
+
+				<li><a href="">Acerca</a>
+					<ul>
+						<li><a href=""></a>
+                        
+                            <li><a href="paginas/Quienes_Somos.html">Quienes somos</a></li>
+                            <li><a href="paginas/A_quien_Servimos.html">A quien servimos</a></li>                        
+                        
+                        </li>
+					</ul>
+				</li>
+
+				<li><a href="">Servicios</a>
+					<ul>
+						<li><a href="paginas/Proyectos.html">Proyectos</a></li>
+						<li><a href="paginas/Noticias.html">Noticias</a></li>
+                        <li><a href="paginas/Comentarios.html">Comentarios</a></li>
+					</ul>
+				</li>
+
+				<li><a href="">Contacto</a>
+					<ul>
+						<li><a href="paginas/AtencionCliente.html">Atencion al Cliente</a></li>
+					</ul>                
+                
+                </li>
+
+			</ul>            
+
+		</div>
+
+
+
+  
+        <br> 
+        <br> 
+        <br>        
+        <hr>
+        <hr>
+        <hr>
+        <hr>
+        <hr>
+        <hr>
+        <hr>
+        <hr>
+        <hr>
+        <hr>
+        <hr>        
+        <hr>    
+        <hr>
+        <hr>
+        <hr>
+
+        <div class="contenedor">
+            <h1> INICIO </h1>
+
+        </div>
+
+        <br> 
+        <br> 
+
+       
+
+
+
+
+
+
+        <br> 
+        <br> 
+        <br>
+        <br> 
+        <br> 
+        <br>
+
+
+
+
+
+        <script src = "paginas/index.js"></script>
+
+
+        <div class="contenedorP">
+          <div id="texto"></div>
+        </div>
+ 
+
+
+
+
+
+
+
+     
+
+
+        <script>
+            var xhr = new XMLHttpRequest();
+            xhr.open('GET', 'output.txt', true);
+            xhr.onreadystatechange = function() {
+              if (xhr.readyState === 4 && xhr.status === 200) {
+                document.getElementById('texto').innerHTML = xhr.responseText;
+              }
+            };
+            xhr.send();
+        </script>
+
+        <script>
+
+          setInterval(function(){
+            location.reload();
+          },3000)
+
+        </script>
+
+        <br>
+        <br> 
+        <br> 
+        <br>
+        <br> 
+        <br> 
+        <br>
+        <br>
+        <br> 
+        <br> 
+        <br>
+        <br> 
+        <br> 
+        <br>
+        <br> 
+        <br> 
+        <br>
+        <br> 
+        <br> 
+        <br>
+        <br> 
+        <br> 
+        <br>
+        <br> 
+        <br> 
+        <br>
+        <br> 
+        <br> 
+        <br>
+        <br> 
+        <br> 
+
+
+        
+        <div class="contenedorVideo2">
+          <h1>Cómo funciona nuestro sistema?</h1>
+          <h2>Fundamentos de la tarjeta LimeSDR</h2>
+        </div>
+
+        <br> 
+        <br> 
+        <br>
+        <br> 
+        <br> 
+        <br>
+  
+        <div class="contenedorVideo">
+
+
+
+
+
+
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/LnJLiOCEq9I" 
+          title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+           encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+  
+
+        <br> 
+        <br> 
+        <br>
+        <br> 
+        <br> 
+        <br>
+        <br> 
+        <br> 
+        <br>
+        <br> 
+        <br> 
+        <br>
+        <br> 
+        <br> 
+
+         
+
+
+        <hr>      
+        <div class="contenedor3">
+            <h1> Página creada por: WebTec Solutions ® Guatemala, Siglo XXI</h1>
+        </div>
+        <hr>        
+
+
+
+    
+
+
+
+
+    </body>
+</html>
