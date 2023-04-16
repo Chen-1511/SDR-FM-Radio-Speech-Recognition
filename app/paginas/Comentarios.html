@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuienesSomos</title>
+    
+</head>
+<body>
+    <style>
+        /* Estilos CSS para la página */ 
+        
+        * {
+
+			margin:0px;
+			padding:0px;
+		}
+			
+		#header {
+			margin:auto;
+			width:500px;
+			font-family:Georgia, sans-serif;
+		}
+
+
+        ul, ol {
+			list-style:none;
+		}
+			
+		.nav > li {
+			float:left;
+		}
+			
+		.nav li a {
+			background-color: #333;
+			color:#fff;
+			text-decoration:none;
+			padding:10px 12px;
+			display:block;
+		}
+			
+		.nav li a:hover {
+			background-color:#434343;
+		}
+			
+		.nav li ul {
+			display:none;
+			position:absolute;
+			min-width:140px;
+		}
+			
+		.nav li:hover > ul {
+			display:block;
+		}
+			
+		.nav li ul li {
+			position:relative;
+		}
+			
+		.nav li ul li ul {
+			right:-140px;
+			top:0px;
+		}        
+
+
+        body {
+          background-color: #f2f2f2;
+          font-family: Georgia, serif;
+          margin: -5;
+          padding: 0;
+        }
+        header {
+          background-color: #333;
+          color: #fff;
+          padding: 5px;
+          text-align: center;
+        }
+        
+        .contenedor
+        
+        {
+
+			background-color: #333;
+			color:#fff;
+            height: 10vh;
+            margin: 5%;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+
+        }
+
+        .contenedor2
+        
+        {
+
+			background-color: none;
+			color:#333;
+            height: 10vh;
+            margin: 5%;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+
+        }
+
+        p
+        {
+
+            width: 50%;
+        }
+        
+        .contenedor3
+        
+        {
+
+			background-color: none;
+			color:#333;
+            height: 0.5vh;
+            margin: 4%;
+            font-size: 4px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+
+        }
+
+
+
+        
+      </style>
+    </head>
+  
+  
+
+
+
+    <body>
+      <header>    
+        <h1>NOTICIERO AL AMANECER</h1>
+      </header>
+ 
+      <div id="header">
+
+        <ul class="nav">
+            <li><a href="../index.html">Inicio</a></li>
+
+            <li><a href="">Acerca</a>
+                <ul>
+                    <li><a href=""></a>
+                    
+                        <li><a href="paginas/Quienes_Somos.html">Quienes somos</a></li>
+                        <li><a href="paginas/A_quien_Servimos.html">A quien servimos</a></li>                        
+                    
+                    </li>
+                </ul>
+            </li>
+
+            <li><a href="">Servicios</a>
+                <ul>
+                    <li><a href="paginas/Proyectos.html">Proyectos</a></li>
+                    <li><a href="paginas/Noticias.html">Noticias</a></li>
+                    <li><a href="pagina/Comentarios.html">Comentarios</a></li>
+                </ul>
+            </li>
+
+            <li><a href="">Contacto</a>
+                <ul>
+                    <li><a href="paginas/AtencionCliente.html">Atencion al Cliente</a></li>
+                </ul>                
+            
+            </li>
+
+        </ul>            
+
+    </div>
+  
+        <br> 
+        <br> 
+        <br>        
+        <hr>
+        <hr>
+        <hr>
+        <hr>
+        <hr>
+        <hr>
+        <hr>
+        <hr>
+        <hr>
+        <hr>
+        <hr>        
+        <hr>    
+        <hr>
+        <hr>
+        <hr>
+
+        <div class="contenedor">
+            <h1> COMENTARIOS </h1>
+
+        </div>
+
+        <div class="contenedor2">
+            <p>
+
+                Si tienes algún comentario, opinión o crítica constructiva sobre nuestro sitio o algo que desees ver mejor, 
+                déjalo respetuosamente en nuestra caja de comentarios.
+
+
+            </p>
+
+        </div>
+
+
+
+    
+            <title>Comentarios</title>
+            <style>
+              /* Estilos para la caja de comentarios */
+              #comentarios {
+                border: 1px solid #ccc;
+                padding: 10px;
+                width: 400px;
+                margin: 20px auto;
+              }
+              #comentarios h2 {
+                font-size: 18px;
+                margin-bottom: 10px;
+              }
+              #comentarios label {
+                display: block;
+                margin-bottom: 5px;
+              }
+              #comentarios textarea {
+                width: 100%;
+                height: 100px;
+                resize: none;
+                border: 1px solid #ccc;
+                padding: 5px;
+                margin-bottom: 10px;
+              }
+              #comentarios button {
+                background-color: #4CAF50;
+                color: white;
+                padding: 10px;
+                border: none;
+                cursor: pointer;
+                font-size: 16px;
+              }
+              #comentarios button:hover {
+                background-color: #45a049;
+              }
+            </style>
+          </head>
+          <body>
+            <div id="comentarios">
+              <h2>Deja tu comentario</h2>
+              <form>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <label for="comentario">Comentario:</label>
+                <textarea id="comentario" name="comentario" required></textarea>
+                <button type="submit">Enviar comentario</button>
+              </form>
+              <div id="comentarios-anteriores">
+                <!-- Aquí se mostrarán los comentarios anteriores -->
+              </div>
+            </div>
+            <script>
+              // Código JavaScript para enviar el comentario a una base de datos o servidor
+              const form = document.querySelector('form');
+              form.addEventListener('submit', e => {
+                e.preventDefault();
+                const nombre = document.querySelector('#nombre').value;
+                const comentario = document.querySelector('#comentario').value;    
+                const comentariosAnteriores = document.querySelector('#comentarios-anteriores');
+                comentariosAnteriores.innerHTML += `<p><strong>${nombre}:</strong> ${comentario}</p>`;
+                form.reset();
+              });
+            </script>
+ 
+
+
+
+
+
+
+        <br> 
+        <br> 
+        <br>
+        <br> 
+        <br> 
+        <br>
+        <br> 
+        <br> 
+        <br>
+        <br> 
+        <br> 
+        <br>
+        <br> 
+        <br> 
+        <br>
+        <br> 
+        <br> 
+        <br>
+        <br> 
+        <br> 
+        <br>
+        <br> 
+        <br> 
+        <br>
+        <br> 
+        <br> 
+        <br>
+        <br> 
+        <br> 
+        <br>
+        <br> 
+        <br> 
+        <br>
+        <br> 
+        <br> 
+        <br>      
+
+        <hr>      
+        <div class="contenedor3">
+            <h1> Página creada por: WebTec Solutions ® Guatemala, Siglo XXI</h1>
+        </div>
+        <hr>
+
+    </body>
+
+
+    </body>
+</html>
