@@ -11,4 +11,7 @@
 * Basic Knowledge of Python, HTML, CSS and JavaScript
 ---
 ### Virtual Machine
-You can use the Virtual Machine with all the software and libraries install, by downloading the image of the VM on the following link:
+You can use the Virtual Machine with all the software and libraries installed, by downloading the image of the VM at the following link:
+
+In this repository you can find an instalation manual, where there is an in depth description of how to install the VM, and how to execute
+the code.
