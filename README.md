@@ -1,5 +1,5 @@
 # SDR-FM-Radio-Speech-Recognition
----
+
 ### Objetives
 * Use a LimeSDR to capture and decode a FM signal.
 * Translate a FM signal to text (in spanish) using a speech recognition library.
@@ -8,5 +8,5 @@
 ### Requirements 
 * LimeSDR
 * GNU Radio
-* Basic Knowledge of Python, HTML, CSS and JSON
+* Basic Knowledge of Python, HTML, CSS and JavaScript
 ---
